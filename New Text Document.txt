@@ -1,0 +1,38 @@
+python -m venv nama_folder
+env\Scripts\activate
+pip install Flask
+
+Latest Flask Before Released from the master branch
+pip install -U https://github.com/pallets/flask/archive/master.tar.gz
+
+For Linux and Mac:
+$ export FLASK_APP=web
+$ export FLASK_ENV=development
+$ flask run
+
+For Windows cmd, use set instead of export:
+> set FLASK_APP=web
+> set FLASK_ENV=development
+> flask run
+
+For Windows PowerShell, use $env: instead of export:
+> $env:FLASK_APP = "web"
+> $env:FLASK_ENV = "development"
+> flask run
+
+
+
+venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
