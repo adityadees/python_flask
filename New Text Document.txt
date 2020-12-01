@@ -5,6 +5,12 @@ pip install Flask
 Latest Flask Before Released from the master branch
 pip install -U https://github.com/pallets/flask/archive/master.tar.gz
 
+pip freeze > requirements.txt
+
+
+pip install flask-sqlalchemy mysql-python
+pip install mysql-connector-python
+
 For Linux and Mac:
 $ export FLASK_APP=web
 $ export FLASK_ENV=development
@@ -20,7 +26,7 @@ For Windows PowerShell, use $env: instead of export:
 > $env:FLASK_ENV = "development"
 > flask run
 
-
+call >> filename.txt
 
 venv/
 
